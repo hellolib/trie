@@ -1,0 +1,10 @@
+package trie
+
+type Trier interfaceP{
+	Put(key string, meta interface{})
+	Get(key string) interface{}
+	Del(key string)
+	Keys() []string
+	SearchByPrefix(prefix string) map[string]interface{}
+	Clear() 
+}
