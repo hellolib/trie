@@ -32,7 +32,7 @@ type Trie struct {
 
 var _ Trier = (*Trie)(nil)
 
-func NewTrie(sep string) *Trie {
+func NewTrie(sep string) Trier {
 	if len(sep) > 1 {
 		log.Fatal("[ERROR] not support separator len > 1")
 	}
